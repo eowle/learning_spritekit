@@ -37,14 +37,18 @@
           int count = [countLabel.text intValue];
           count++;
           countLabel.text = [NSString stringWithFormat:@"%d", count];
-          countLabel.position = CGPointMake((float)rand() / RAND_MAX * CGRectGetMaxX(self.frame),
-                                            (float)rand() / RAND_MAX * CGRectGetMaxY(self.frame));
+          countLabel.position = CGPointMake((float)rand() / RAND_MAX * CGRectGetMaxX(self.frame), CGRectGetMaxY(self.frame));
         }
     }
 }
 
 -(void)update:(CFTimeInterval)currentTime {
-    /* Called before each frame is rendered */
+  countLabel.position = CGPointMake(countLabel.position.x, countLabel.position.y - 2);
+  
+  if(countLabel.position.y < - countLabel.frame.size.height)
+  {
+    countLabel.position = CGPointMake(countLabel.position.x, self.frame.size.height);
+  }
 }
 
 @end
