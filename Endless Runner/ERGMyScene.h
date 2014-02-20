@@ -14,4 +14,6 @@
   @property (strong, nonatomic) SKLabelNode *countLabel;
   @property (strong, nonatomic) ERGBackground *currentBackground;
   @property (assign) CFTimeInterval lastUpdateTimeInterval;
+  @property (strong, nonatomic) SKLabelNode * scoreLabel;
+  @property (assign) double score;
 @end

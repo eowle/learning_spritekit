@@ -14,6 +14,7 @@
   self = [super initWithImageNamed:@"character.png"];
   {
     self.name = playerName;
+    self.zPosition = 10;
   }
   
   return self;

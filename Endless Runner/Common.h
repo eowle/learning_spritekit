@@ -11,6 +11,6 @@
 
 static NSString *backgroundName = @"background";
 static NSString *playerName = @"player";
-static NSInteger backgroundMoveSpeed = 30;
+static NSInteger backgroundMoveSpeed = 90;
 
 #endif

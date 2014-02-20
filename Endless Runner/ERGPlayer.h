@@ -9,5 +9,5 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface ERGPlayer : SKSpriteNode
-
+  @property (assign) BOOL selected;
 @end
