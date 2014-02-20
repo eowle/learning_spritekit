@@ -8,7 +8,10 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface ERGMyScene : SKScene {
-  SKLabelNode *countLabel;
-}
+@class ERGBackground;
+
+@interface ERGMyScene : SKScene
+  @property (strong, nonatomic) SKLabelNode *countLabel;
+  @property (strong, nonatomic) ERGBackground *currentBackground;
+  @property (assign) CFTimeInterval lastUpdateTimeInterval;
 @end

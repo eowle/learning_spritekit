@@ -24,6 +24,8 @@
 		585E394B18B65B7300E287A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585E392618B65B7300E287A4 /* UIKit.framework */; };
 		585E395318B65B7300E287A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 585E395118B65B7300E287A4 /* InfoPlist.strings */; };
 		585E395518B65B7300E287A4 /* Endless_RunnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 585E395418B65B7300E287A4 /* Endless_RunnerTests.m */; };
+		585E396318B678B500E287A4 /* ERGBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 585E396218B678B500E287A4 /* ERGBackground.m */; };
+		585E396618B6815B00E287A4 /* ERGPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 585E396518B6815B00E287A4 /* ERGPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,11 @@
 		585E395018B65B7300E287A4 /* Endless RunnerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Endless RunnerTests-Info.plist"; sourceTree = "<group>"; };
 		585E395218B65B7300E287A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		585E395418B65B7300E287A4 /* Endless_RunnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Endless_RunnerTests.m; sourceTree = "<group>"; };
+		585E395E18B6781C00E287A4 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		585E396118B678B500E287A4 /* ERGBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERGBackground.h; sourceTree = "<group>"; };
+		585E396218B678B500E287A4 /* ERGBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERGBackground.m; sourceTree = "<group>"; };
+		585E396418B6815B00E287A4 /* ERGPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERGPlayer.h; sourceTree = "<group>"; };
+		585E396518B6815B00E287A4 /* ERGPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERGPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,9 +135,14 @@
 				585E393A18B65B7300E287A4 /* ERGViewController.m */,
 				585E393C18B65B7300E287A4 /* ERGMyScene.h */,
 				585E393D18B65B7300E287A4 /* ERGMyScene.m */,
+				585E396418B6815B00E287A4 /* ERGPlayer.h */,
+				585E396518B6815B00E287A4 /* ERGPlayer.m */,
 				585E393F18B65B7300E287A4 /* Spaceship.png */,
 				585E394118B65B7300E287A4 /* Images.xcassets */,
 				585E392B18B65B7300E287A4 /* Supporting Files */,
+				585E395E18B6781C00E287A4 /* Common.h */,
+				585E396118B678B500E287A4 /* ERGBackground.h */,
+				585E396218B678B500E287A4 /* ERGBackground.m */,
 			);
 			path = "Endless Runner";
 			sourceTree = "<group>";
@@ -269,6 +281,8 @@
 				585E393118B65B7300E287A4 /* main.m in Sources */,
 				585E393E18B65B7300E287A4 /* ERGMyScene.m in Sources */,
 				585E393518B65B7300E287A4 /* ERGAppDelegate.m in Sources */,
+				585E396618B6815B00E287A4 /* ERGPlayer.m in Sources */,
+				585E396318B678B500E287A4 /* ERGBackground.m in Sources */,
 				585E393B18B65B7300E287A4 /* ERGViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +496,7 @@
 				585E395A18B65B7300E287A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		585E395B18B65B7300E287A4 /* Build configuration list for PBXNativeTarget "Endless RunnerTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +505,7 @@
 				585E395D18B65B7300E287A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
